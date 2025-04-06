@@ -1,0 +1,19 @@
+next prompt to bolt.new 
+
+
+Please fix the issue where if I where to login the components are not dynamically change it still remains in the same state. Example: if the user login as user the navbar still remain the same and the sidemenu does not appear. It will only change if the whole page is reloaded. Along with that issue. 
+
+Please add the following.
+- A new navbar on the not authenticated user. "Login"
+- A section on the home page about customer reviews.
+- A section on the home page about partnered companies
+- A section on the About Us about awards and recognition.
+- A section on the About us about advertisement of webinars of the company held.
+- A pop-up of advertisement of webinars of the company held when visiting homepage. The content of this will be the one section of about us "advertisement of webinars of the company held"
+
+--------- Done 06/04/2025
+
+
+
+
+

@@ -1,80 +1,192 @@
-# Nelly-Food-Products
-A website requested by client Nerf
+# WellnessHub E-commerce Platform
 
-I'll explain the structure and component relationships in this Next.js application.
+A modern e-commerce platform built with Next.js 13+, focusing on health and wellness products. The platform offers a seamless shopping experience with features like user authentication, product management, and a responsive design.
 
-1. Root Layout (app/layout.tsx)
+## 🌟 Features
 
-- This is the main layout wrapper for all pages
-- Includes:
-    - ThemeProvider for dark/light mode
-    - Navbar (persistent navigation)
-    - Main content area
-    - Footer (persistent footer)
-- All pages are rendered inside this layout
+### User Features
+- **Authentication System**
+  - User/Admin role-based access
+  - Protected routes
+  - Persistent sessions
 
-2. Page Structure
+- **Shopping Experience**
+  - Product browsing and search
+  - Shopping cart management
+  - Streamlined checkout process
+  - Order tracking
+
+- **User Dashboard**
+  - Order history
+  - Referral tracking
+  - Profile management
+
+### Admin Features
+- **Admin Dashboard**
+  - User management
+  - Order monitoring
+  - Referral tracking
+  - Analytics overview
+
+### General Features
+- **Responsive Design**
+  - Mobile-first approach
+  - Cross-browser compatibility
+  - Optimized for all screen sizes
+
+- **Modern UI/UX**
+  - Clean, intuitive interface
+  - Dark/Light mode support
+  - Smooth animations
+  - Loading states
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 13+
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Authentication**: Custom implementation with localStorage
+- **State Management**: React Context API
+
+## 📂 Project Structure
+
+```
 app/
-├── layout.tsx          # Root layout (wraps all pages)
+├── layout.tsx          # Root layout
 ├── page.tsx            # Homepage
-├── about/
-│   └── page.tsx       # About page
-├── contact/
-│   └── page.tsx       # Contact page
-├── login/
-│   └── page.tsx       # Login page
-├── register/
-│   └── page.tsx       # Registration page
-├── dashboard/
-│   └── page.tsx       # Admin dashboard
-├── user-dashboard/
-│   └── page.tsx       # User dashboard
-└── products/
-    ├── page.tsx       # Products listing
-    └── sample/
-        └── page.tsx   # Sample product details
+├── about/             # About page
+├── contact/           # Contact page
+├── login/            # Authentication
+├── register/         # User registration
+├── dashboard/        # Admin dashboard
+├── user-dashboard/   # User dashboard
+└── products/         # Product pages
 
-3. Component Organization
 components/
-├── navbar.tsx         # Navigation bar component
-├── footer.tsx         # Footer component
-├── theme-provider.tsx # Theme context provider
-└── ui/               # Reusable UI components (shadcn/ui)
-    ├── button.tsx
-    ├── input.tsx
-    └── ...
+├── navbar.tsx        # Navigation component
+├── footer.tsx        # Footer component
+├── cart-modal.tsx    # Shopping cart
+├── webinar-modal.tsx # Webinar promotions
+└── ui/              # Reusable UI components
 
-4. Authentication Flow
-- Login page handles authentication
-- Uses localStorage to store:
-    - isAuthenticated: Login status
-    - userType: "admin" or "user"
-    - userEmail: User's email
+lib/
+├── auth-context.tsx  # Authentication context
+├── cart-context.tsx  # Shopping cart context
+└── utils.ts         # Utility functions
+```
 
-5. Layout (app/layout.tsx)
-├── ThemeProvider
-├── Navbar
-│   └── Navigation Links (conditional based on auth)
-├── Page Content (varies by route)
-│   ├── Home (/)
-│   ├── Products (/products)
-│   ├── Product Details (/products/sample)
-│   ├── Admin Dashboard (/dashboard)
-│   └── User Dashboard (/user-dashboard)
-└── Footer
+## 🚀 Getting Started
 
-6. Key Features
-- Client-side navigation using Next.js's Link component
-- Protected routes (dashboard pages)
-- Responsive design using Tailwind CSS
-- UI components from shadcn/ui library
-- Icons from lucide-react
-- Theme switching capability
+### Prerequisites
+- Node.js 16.8 or later
+- npm or yarn
 
-7. State Management
-- Uses React's useState for local component state
-- Authentication state managed via localStorage
-- No global state management (Redux/Context) implemented yet
+### Installation
 
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/wellness-hub.git
+```
 
-This structure follows Next.js 13+ conventions with the App Router, where each page is a React component in a page.tsx file within its respective directory.
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Demo Accounts
+
+- **Admin Account**
+  - Email: admin@gmail.com
+  - Password: admin
+
+- **User Account**
+  - Email: user@gmail.com
+  - Password: user
+
+## 🎯 Key Features Breakdown
+
+### Authentication System
+- Role-based access control (Admin/User)
+- Protected routes
+- Persistent sessions using localStorage
+
+### Product Management
+- Product browsing and filtering
+- Detailed product views
+- Shopping cart functionality
+- Secure checkout process
+
+### User Features
+- Personal dashboard
+- Order history
+- Referral system
+- Profile management
+
+### Admin Features
+- User management
+- Order monitoring
+- Analytics dashboard
+- Referral tracking
+
+### Additional Features
+- Webinar promotions
+- Customer reviews
+- Partner companies showcase
+- Awards and recognition section
+
+## 📱 Responsive Design
+
+The application is fully responsive and optimized for:
+- Mobile devices
+- Tablets
+- Desktop computers
+- Large screens
+
+## 🎨 Theme Support
+
+- Light/Dark mode support
+- Customizable color schemes
+- Consistent design language
+- Modern UI components
+
+## 🔒 Security Features
+
+- Protected routes
+- Role-based access control
+- Secure authentication flow
+- Data validation
+
+## 🎯 Future Enhancements
+
+- [ ] Implement backend integration
+- [ ] Add payment gateway integration
+- [ ] Enhance analytics dashboard
+- [ ] Add email notifications
+- [ ] Implement real-time chat support
+- [ ] Add product reviews and ratings
+- [ ] Enhance search functionality
+- [ ] Add wishlist feature
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📧 Contact
+
+For any queries or support, please contact support@wellnesshub.com
