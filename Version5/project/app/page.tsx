@@ -10,15 +10,21 @@ export default function Home() {
       <WebinarModal />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="mt-20 pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                Transform Your Life with Premium Wellness Products
+              Always Rising beyond it’s limits...
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                Discover our curated selection of high-quality health, nutrition, and personal care products designed to enhance your well-being.
+              Fresh farm produce from the locals of
+              Jimenez, Misamis Occidental, and
+              other regions in Mindanao,
+              Philippines, is one of the key reasons
+              why Nelly's has remained in business
+              for years. By supporting the local
+              community,
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="gap-2">
@@ -33,7 +39,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3"
+                src="/HomePageBanner.png"
                 alt="Wellness Products"
                 fill
                 className="object-cover"
@@ -74,22 +80,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Sarah Johnson",
-                role: "Fitness Enthusiast",
-                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3",
-                content: "The quality of products and customer service is exceptional. I've seen remarkable improvements in my wellness journey."
+                name: "Juan Miguel Santos",
+                role: "LA UNION Customer",
+                image: "/JuanMiguelSantos.png",
+                content: "Maganda po sa katawan, after 2 days na iniinom meron cleansing effect, para sa akin kahit hindi maglagay ng sugar sakto lang panlasa ko. Maraming salamat po Nelly Herbal Coffee. God bless po sa inyo."
               },
               {
-                name: "Michael Chen",
-                role: "Wellness Coach",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
-                content: "As a wellness coach, I highly recommend WellnessHub. Their products are authentic and deliver real results."
+                name: "Maria Isabella Reyes",
+                role: "Santa Maria Customer",
+                image: "/MariaIsabellaReyes.png",
+                content: "Masarap po ang kape ng Nelly herbal coffee, mahilig po ko mag kape kaya naghanap ako ng alternative na hindi ako magpapalpitate at Nakita ko ang Nelly Herbal Coffee, Nag try ako, Lumakas ang immune system ko, dati maambunan lang ako, sinisipon na ako, at dati palaging sumasakit ang balakang ko pag matagal akong naka upo... 50 years old na ko kaya kailangan ko narin ng mga healthy drinks tulad ng Nelly Coffee...."
               },
               {
-                name: "Emma Davis",
-                role: "Yoga Instructor",
-                image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
-                content: "Found amazing supplements that perfectly complement my yoga practice. The results have been transformative."
+                name: "Wilma Namia Ragos",
+                role: "Cavite Customer",
+                image: "/WilmaNamiaRagos.jpg",
+                content: "Hi Nelly herbal coffe Wilma ragos Po Second order ko na Po sa inyo ng mangosteen Malunggay corn coffe Dati Hindi ko hilig Ang black coffe pero nung nakilala ko Ang Nelly herbal coffe nasanay na Po ako dahil nung Bata pa ako same lasa ng kinakape Naminat mataas Po Kasi uric acid ko at nagkaroon ako ng lagnat with bukol dahil daw po iyon sa mataas ang uric acid kaya Ang ginawa ko Po Ang iniinom ko ay Ang mangosteen Malunggay corn coffe Meron Po Kasi Akong trabaho at bawal Po kaming Hindi pumasok at syempre bilang nanay na Po kailangan magtrabaho ito pong mangosteen Malunggay corn coffe Ang nakatulong sakin dahil nawala Po Ang lagnat ko at bukol hirap din ako makatulog kaya malaking tulong po ito sakin at naging pagkakitaan ko narin Maraming salamat Nelly Herbal coffe."
               }
             ].map((review, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
@@ -126,13 +132,13 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">Trusted by Industry Leaders</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {[
-              "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3",
-              "https://images.unsplash.com/photo-1560472355-b33ff0c44a43?ixlib=rb-4.0.3",
-              "https://images.unsplash.com/photo-1560472355-b33ff0c44a44?ixlib=rb-4.0.3",
-              "https://images.unsplash.com/photo-1560472355-b33ff0c44a45?ixlib=rb-4.0.3"
+              "/DOST-Logo.png",
+              "/DTI-logo.png",
+              "/GrowthInternationalCircle-logo.png",
+              "/MPCI-logo.png"
             ].map((partner, index) => (
               <div key={index} className="p-6 bg-gray-50 rounded-lg flex items-center justify-center">
-                <div className="relative h-16 w-full">
+                <div className="relative h-40 w-full">
                   <Image
                     src={partner}
                     alt={`Partner ${index + 1}`}

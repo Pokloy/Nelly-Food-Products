@@ -11,12 +11,15 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                Empowering Your Journey to Wellness
+                Nelly's was founded by Leonila T. Pacatang, mother of current CEO Kevin T. Pacatang.
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                At WellnessHub, we're dedicated to providing premium health and wellness products 
-                that enhance your quality of life. Our journey began with a simple mission: 
-                to make wellness accessible to everyone.
+                It began as a small business of producing coffee and tablea marketed only
+                at the town of the Jimenez Misamis Occidental, as of today due to the
+                overwhelming customer acceptance and satisfaction of the product quality,
+                Nelly Coffee and Tablea is now “Rising Beyond’ working to create a name in
+                the industry as one of the best manufacturer of coffee and tablea including
+                sweet products in the whole region. 
               </p>
               <Button className="gap-2">
                 Learn More <ArrowRight className="h-5 w-5" />
@@ -24,10 +27,10 @@ export default function AboutUs() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
+                src="/Aboutus.png"
                 alt="Our Team"
                 fill
-                className="object-cover"
+                 className="object-cover object-top"
                 priority
               />
             </div>
@@ -66,32 +69,39 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: Trophy,
-                title: "Best Wellness Platform",
-                org: "Health Tech Awards 2024",
-                description: "Recognized for innovative health solutions"
+                photo: "/award-1.png",
+                title: "2024 Presidential Awardee for Outstanding MSME’s",
+                org: "Presidential Award",
+                description: "Recognized for innovative products"
               },
               {
-                icon: Star,
-                title: "Customer Excellence",
-                org: "Global Wellness Summit",
-                description: "Outstanding customer satisfaction"
+                photo: "/award-2.png",
+                title: "Asia’s Quality Excellence Awards",
+                org: "Asia’s Quality Excellence",
+                description: "Asia’s Quality Excellence Awards for Best Quality Herbal Wellness Products of 2024"
               },
               {
-                icon: Shield,
-                title: "Quality Assurance",
-                org: "International Standards",
-                description: "ISO 9001:2015 Certified"
+                photo: "/award-3.png",
+                title: "Best Setup Consultancy Adoptor Awardee of 2019",
+                org: "Department of Science and Tehcnology",
+                description: "DOST Best Setup Consultancy Adoptor Awardee of 2019"
               },
               {
-                icon: Award,
-                title: "Innovation Award",
-                org: "Digital Health Forum",
-                description: "Leading digital wellness solutions"
+                photo: "/award-4.png",
+                title: "Awards for Youth Micro-entrepreneur of the Year",
+                org: "Citi Micro-entrepreneurship",
+                description: "2016 Citi Micro-entrepreneurship Awards for Youth Micro-entrepreneur of the Year"
               }
             ].map((award, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-md">
-                <award.icon className="h-12 w-12 text-primary mb-4" />
+                <div className="relative h-40 w-full">
+                <Image
+                  src={award.photo}
+                  alt={`Partner ${index + 1}`}
+                  fill
+                  className="object-contain"
+                />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">{award.title}</h3>
                 <p className="text-sm text-primary mb-2">{award.org}</p>
                 <p className="text-gray-600">{award.description}</p>

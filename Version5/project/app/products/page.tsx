@@ -10,36 +10,141 @@ import { Input } from "@/components/ui/input";
 const products = [
   {
     id: 1,
-    name: "Organic Wellness Tea",
+    name: "Nelly Tablea Pouch",
     price: 24.99,
     rating: 4.8,
     reviews: 128,
-    image: "/images/products/wellness-tea.jpg"
+    image: "/1.png"
   },
   {
     id: 2,
-    name: "Natural Vitamin Complex",
+    name: "PURE MAIS JAR",
     price: 39.99,
     rating: 4.6,
     reviews: 95,
-    image: "/images/products/vitamins.jpg"
+    image: "/21.png"
   },
   {
     id: 3,
-    name: "Essential Oil Set",
+    name: "PURE MAIS 175g",
     price: 49.99,
     rating: 4.9,
     reviews: 156,
-    image: "/images/products/essential-oils.jpg"
+    image: "/26.png"
   },
   {
     id: 4,
-    name: "Wellness Journal",
+    name: "PURE MAIS SACHET",
     price: 19.99,
     rating: 4.7,
     reviews: 84,
-    image: "/images/products/journal.jpg"
+    image: "/27.png"
+  },
+  {
+    id: 5,
+    name: "BINUKBOK KAPE JAR",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/28.png"
+  },
+  {
+    id: 6,
+    name: "BINUKBOK KAPE SACHET",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/29.png"
+  },
+  {
+    id: 7,
+    name: "BINUKBOK KAPE 175g",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/30.png"
+  },
+  {
+    id: 8,
+    name: "TABLEA POUCH",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/31.png"
+  },
+  {
+    id: 9,
+    name: "TABLEA SMALL PACK",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/32.png"
+  },
+  {
+    id: 10,
+    name: "TABLEA ROLL",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/33.png"
+  },
+  {
+    id: 11,
+    name: "TABLEA BIG PACK",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/34.png"
+  }, 
+  {
+    id: 12,
+    name: "TABLEA Sachet",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/35.png"
+  },
+  {
+    id: 13,
+    name: "INSTANT DULAW Turmeric Powder",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/36.png"
+  },
+  {
+    id: 14,
+    name: "INSTANT SALABAT Ginger Powder",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/37.png"
+  },
+  {
+    id: 15,
+    name: "PURE COFFEE 90g",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/38.png"
+  },
+  {
+    id: 16,
+    name: "SUKARAP 750ml",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/39.png"
+  },
+  {
+    id: 17,
+    name: "SUKARAP 375ml",
+    price: 19.99,
+    rating: 4.7,
+    reviews: 84,
+    image: "/40.png"
   }
+
 ];
 
 export default function ProductsPage() {
@@ -50,8 +155,8 @@ export default function ProductsPage() {
   );
 
   return (
-    <main className="pt-24 min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="pt-24 min-h-screen bg-gray-50 mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mb-20">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4 md:mb-0">Our Products</h1>
           <div className="relative w-full md:w-64">

@@ -43,7 +43,7 @@ export default function Login() {
   };
 
   return (
-    <main className="pt-24 min-h-screen bg-gradient-to-r from-blue-50 to-indigo-50">
+    <main className="pt-24 min-h-screen bg-gradient-to-r from-blue-50 to-indigo-50 mt-14">
       <div className="max-w-md mx-auto p-4 sm:p-6 lg:p-8">
         <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
           <div className="text-center mb-8">
