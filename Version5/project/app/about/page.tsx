@@ -116,19 +116,37 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((member) => (
-              <div key={member} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="relative h-48">
+            {[
+            {
+              image:"/CEO.png",
+              name:"Nelly Food Products",
+              position:"CEO"
+            },{
+              image:"/Nerf.jpg",
+              name:"Nerf Roden",
+              position:"Executive"
+            },{
+              image:"/MarcoReyes.png",
+              name:"Marco Reyes",
+              position:"Product Manager"
+            },{
+              image:"/Lira_Santos.jpg",
+              name:"Lira Santos",
+              position:"Marketing Manager"
+            }
+          ].map((member,index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="relative h-[400px] rounded-xl overflow-hidden">
                   <Image
-                    src={`https://images.unsplash.com/photo-15562285${member}1-0d85b1a4d571?ixlib=rb-4.0.3`}
-                    alt={`Team Member ${member}`}
+                    src={member.image}
+                    alt={member.name}
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4 text-center">
-                  <h3 className="font-semibold mb-1">Team Member {member}</h3>
-                  <p className="text-gray-600 text-sm">Wellness Expert</p>
+                  <h3 className="font-semibold mb-1">{member.name}</h3>
+                  <p className="text-gray-600 text-sm">{member.position}</p>
                 </div>
               </div>
             ))}
