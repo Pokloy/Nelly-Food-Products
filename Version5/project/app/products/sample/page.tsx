@@ -12,7 +12,7 @@ import { useRouter } from 'next/navigation';
 // Updated sample product data with local images
 const product = {
   id: 1,
-  name: "Organic Wellness Tea",
+  name: "PURE MAIS JAR",
   price: 24.99,
   originalPrice: 29.99,
   rating: 4.8,
@@ -20,15 +20,15 @@ const product = {
   description: "Our premium organic wellness tea is a carefully crafted blend of natural ingredients designed to promote overall well-being. Each sip delivers a perfect balance of flavors and therapeutic benefits.",
   specifications: [
     "100% Organic Ingredients",
-    "30 Tea Bags per Pack",
+    "Comes with Jar, Sachet and 175g",
     "Caffeine-Free",
     "Non-GMO Certified",
     "Sustainably Sourced"
   ],
   images: [
-    "/images/products/wellness-tea.jpg",
-    "/images/products/wellness-tea-2.jpg",
-    "/images/products/wellness-tea-3.jpg"
+    "/21.png",
+    "/26.png",
+    "/27.png"
   ]
 };
 
