@@ -37,7 +37,7 @@ export default function Register() {
       <div className="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
         <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">Join WellnessHub</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Join Nelly Food Products</h1>
             <p className="mt-2 text-gray-600">Begin your wellness journey with us</p>
           </div>
 
