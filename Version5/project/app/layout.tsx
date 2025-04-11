@@ -10,8 +10,11 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Wellness E-commerce',
+  title: 'Nelly Food Products',
   description: 'Your trusted source for health and wellness products',
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">WellnessHub</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Nelly Food Product</h3>
             <p className="text-gray-400 mb-4">
               Your trusted source for premium health and wellness products. Empowering your journey to a healthier life.
             </p>
@@ -109,10 +109,10 @@ export default function Footer() {
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm">
-              © {new Date().getFullYear()} WellnessHub. All rights reserved.
+              © {new Date().getFullYear()} Nelly Food Product. All rights reserved.
             </p>
             <p className="text-sm flex items-center gap-1">
-              Made with <Heart className="h-4 w-4 text-red-500" /> for a healthier world
+              Made with <Heart className="h-4 w-4 text-red-500" /> Alier E. Torrenueva 2025
             </p>
           </div>
         </div>
