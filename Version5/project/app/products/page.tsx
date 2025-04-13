@@ -11,7 +11,7 @@ const products = [
   {
     id: 1,
     name: "Nelly Tablea Pouch",
-    price: 24.99,
+    price: 35.00,
     rating: 4.8,
     reviews: 128,
     image: "/1.png"
@@ -19,7 +19,7 @@ const products = [
   {
     id: 2,
     name: "PURE MAIS JAR",
-    price: 39.99,
+    price: 150.00,
     rating: 4.6,
     reviews: 95,
     image: "/21.png"
@@ -27,7 +27,7 @@ const products = [
   {
     id: 3,
     name: "PURE MAIS 175g",
-    price: 49.99,
+    price: 90.00,
     rating: 4.9,
     reviews: 156,
     image: "/26.png"
@@ -35,7 +35,7 @@ const products = [
   {
     id: 4,
     name: "PURE MAIS SACHET",
-    price: 19.99,
+    price: 50.00,
     rating: 4.7,
     reviews: 84,
     image: "/27.png"
@@ -43,7 +43,7 @@ const products = [
   {
     id: 5,
     name: "BINUKBOK KAPE JAR",
-    price: 19.99,
+    price: 150.00,
     rating: 4.7,
     reviews: 84,
     image: "/28.png"
@@ -51,7 +51,7 @@ const products = [
   {
     id: 6,
     name: "BINUKBOK KAPE SACHET",
-    price: 19.99,
+    price: 50.00,
     rating: 4.7,
     reviews: 84,
     image: "/29.png"
@@ -59,7 +59,7 @@ const products = [
   {
     id: 7,
     name: "BINUKBOK KAPE 175g",
-    price: 19.99,
+    price: 90.00,
     rating: 4.7,
     reviews: 84,
     image: "/30.png"
@@ -67,7 +67,7 @@ const products = [
   {
     id: 8,
     name: "TABLEA POUCH",
-    price: 19.99,
+    price: 35.00,
     rating: 4.7,
     reviews: 84,
     image: "/31.png"
@@ -83,7 +83,7 @@ const products = [
   {
     id: 10,
     name: "TABLEA ROLL",
-    price: 19.99,
+    price: 30.00,
     rating: 4.7,
     reviews: 84,
     image: "/33.png"
@@ -91,7 +91,7 @@ const products = [
   {
     id: 11,
     name: "TABLEA BIG PACK",
-    price: 19.99,
+    price: 170.00,
     rating: 4.7,
     reviews: 84,
     image: "/34.png"
@@ -99,7 +99,7 @@ const products = [
   {
     id: 12,
     name: "TABLEA Sachet",
-    price: 19.99,
+    price: 20.99,
     rating: 4.7,
     reviews: 84,
     image: "/35.png"
@@ -123,7 +123,7 @@ const products = [
   {
     id: 15,
     name: "PURE COFFEE 90g",
-    price: 19.99,
+    price: 70.00,
     rating: 4.7,
     reviews: 84,
     image: "/38.png"
@@ -131,7 +131,7 @@ const products = [
   {
     id: 16,
     name: "SUKARAP 750ml",
-    price: 19.99,
+    price: 170.00,
     rating: 4.7,
     reviews: 84,
     image: "/39.png"
@@ -139,7 +139,7 @@ const products = [
   {
     id: 17,
     name: "SUKARAP 375ml",
-    price: 19.99,
+    price: 90.00,
     rating: 4.7,
     reviews: 84,
     image: "/40.png"
@@ -185,7 +185,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="p-4">
                   <h2 className="text-lg font-semibold text-gray-900 mb-2">{product.name}</h2>
-                  <p className="text-2xl font-bold text-primary mb-2">${product.price}</p>
+                  <p className="text-2xl font-bold text-primary mb-2">₱{product.price}</p>
                   <div className="flex items-center">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (

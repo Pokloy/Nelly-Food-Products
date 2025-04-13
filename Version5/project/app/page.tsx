@@ -3,6 +3,11 @@ import { ShoppingCart, ArrowRight, Star, Users, Shield, Quote } from "lucide-rea
 import Image from "next/image";
 import Link from "next/link";
 import WebinarModal from "@/components/webinar-modal";
+import ProductShowcase from "@/components/product-showcase";
+import LimitedOffers from "@/components/limited-offers";
+import ProductBundles from "@/components/product-bundles";
+import ProductVideo from "@/components/product-video";
+import SustainabilitySection from "@/components/sustainability-section";
 
 export default function Home() {
   return (
@@ -49,6 +54,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Product Showcase Section */}
+      <ProductShowcase />
+
+      {/* Limited Time Offers */}
+      <LimitedOffers />
+
+      {/* Product Bundles */}
+      <ProductBundles />
+
+      {/* Product Video Section */}
+      <ProductVideo />
+
+      {/* Sustainability Section */}
+      <SustainabilitySection />
 
       {/* Features Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">

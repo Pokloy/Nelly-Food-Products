@@ -29,9 +29,9 @@ const Navbar = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
+    { name: 'Shop', href: '/products' },
     ...(!isAuthenticated ? [{ name: 'Login', href: '/login' }] : []),
     ...(!isAuthenticated ? [{ name: 'Join Us', href: '/register' }] : []),
-    ...(isAuthenticated ? [{ name: 'Shop', href: '/products' }] : []),
     ...(isAuthenticated && userType === 'admin' ? [{ name: 'Dashboard', href: '/dashboard' }] : []),
     ...(isAuthenticated && userType === 'user' ? [{ name: 'My Dashboard', href: '/user-dashboard' }] : []),
   ]
