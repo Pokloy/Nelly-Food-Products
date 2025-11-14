@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { useCart } from '@/lib/cart-context';
 import { useAuth } from '@/lib/auth-context';
 import { useRouter } from 'next/navigation';
+import { Comments } from '@/components/reviews';
 
 // Updated sample product data with local images
 const product = {
@@ -161,9 +162,33 @@ export default function ProductDetail() {
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
+              <div className='w-full py-10'>
+                {/* Comments Info */}
+                <Comments
+                  productId="your-product-id"
+                  productName="Your Product Name"
+                  isAuthenticated={true} // Pass your auth state
+                  allowReviews={true}
+                  onSubmitReview={async (data) => {
+                    // Handle review submission to your backend
+                    console.log('New review:', data);
+                  }}
+                  onHelpfulReview={(reviewId) => {
+                    // Handle helpful vote
+                    console.log('Helpful:', reviewId);
+                  }}
+                  onReportReview={(reviewId) => {
+                    // Handle report
+                    console.log('Reported:', reviewId);
+                  }}
+                />
+              </div>
       </div>
+      
     </main>
   );
 }

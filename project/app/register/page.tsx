@@ -9,6 +9,7 @@ import { User, Mail, Lock, Phone, MapPin, UserPlus } from "lucide-react";
 export default function Register() {
   const [formData, setFormData] = useState({
     firstName: '',
+    middleName:'',
     lastName: '',
     email: '',
     phone: '',
@@ -33,8 +34,8 @@ export default function Register() {
   };
 
   return (
-    <main className="pt-24 min-h-screen bg-gradient-to-r from-blue-50 to-indigo-50 mt-16">
-      <div className="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
+    <main className="pt-10 min-h-screen bg-gradient-to-r from-blue-50 to-indigo-50 mt-16">
+      <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
         <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-900">Join Nelly Food Products</h1>
@@ -60,6 +61,24 @@ export default function Register() {
                 </div>
               </div>
 
+            
+              <div className="space-y-2">
+                <Label htmlFor="middleName">Middle Name</Label>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                  <Input
+                    id="middleName"
+                    name="middleName"
+                    type="text"
+                    value={formData.middleName}
+                    onChange={handleChange}
+                    className="pl-10"
+                    placeholder="Doe"
+                    required
+                  />
+                </div>
+              </div>
+
               <div className="space-y-2">
                 <Label htmlFor="lastName">Last Name</Label>
                 <div className="relative">
@@ -76,9 +95,8 @@ export default function Register() {
                   />
                 </div>
               </div>
-            </div>
 
-            <div className="space-y-2">
+              <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -94,6 +112,9 @@ export default function Register() {
                 />
               </div>
             </div>
+            </div>
+
+
 
             <div className="space-y-2">
               <Label htmlFor="referredBy">Referred By (Optional)</Label>
@@ -177,12 +198,14 @@ export default function Register() {
               </div>
             </div>
 
-            <Button
-              type="submit"
-              className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
-            >
-              Create Account
-            </Button>
+            <div className='flex items-center justify-center'>
+              <Button
+                type="submit"
+                className="w-sm bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
+              >
+                Create Account
+              </Button>
+            </div>
           </form>
 
           <p className="mt-4 text-center text-sm text-gray-600">
